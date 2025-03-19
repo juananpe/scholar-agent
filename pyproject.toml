@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-server-example"
+version = "0.1.0"
+description = "MCP server examples including Google Scholar search via SerpAPI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.3.0",
+    "python-dotenv",
+    "google-search-results",  # This is the package name for serpapi
+    "httpx>=0.28.1",          # For the docs agent
+    "beautifulsoup4>=4.13.3",  # For the docs agent
+    "parsel>=1.8.1",          # For abstract extraction
+    "playwright>=1.41.0"      # For web scraping
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
