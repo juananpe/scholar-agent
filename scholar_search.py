@@ -20,7 +20,7 @@ async def fetch_abstract(url: str, publisher: str) -> Optional[str]:
 
     Args:
         url (str): The URL of the research paper
-        publisher (str): The publisher of the paper ('acm', 'ieee', or 'researchgate')
+        publisher (str): The publisher of the paper ('acm', 'ieee', 'researchgate', or 'springer')
 
     Returns:
         Optional[str]: The abstract text if found, None otherwise
@@ -48,6 +48,9 @@ async def fetch_abstract(url: str, publisher: str) -> Optional[str]:
                 ],
                 'researchgate': [
                     '.research-detail-middle-section__abstract::text'
+                ],
+                'springer': [
+                    '#Abs1-section::text'
                 ]
             }
 
@@ -138,7 +141,7 @@ async def get_paper_abstract(url: str, publisher: str) -> str:
 
     Args:
         url (str): The URL of the research paper
-        publisher (str): The publisher of the paper ('acm', 'ieee', or 'researchgate')
+        publisher (str): The publisher of the paper ('acm', 'ieee', 'researchgate', or 'springer')
 
     Returns:
         str: The abstract text if found, or an error message if not found
