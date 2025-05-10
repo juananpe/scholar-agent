@@ -18,6 +18,9 @@ dependencies = [
     "playwright>=1.41.0"      # For web scraping
 ]
 
+[tool.setuptools]
+py-modules = ["scholar_search"]
+
 [project.optional-dependencies]
 dev = [
     "black",
