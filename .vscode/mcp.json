@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "scholar_search": {
+      "command": "uv",
+      "args": ["--directory", "/opt/scholar-agent", "run", "scholar_search.py"]
+    }
+  },
+  "inputs": []
+}

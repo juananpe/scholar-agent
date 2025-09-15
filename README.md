@@ -58,12 +58,14 @@ Searches Google Scholar for scholarly articles matching the query.
 
 **Returns:** JSON string with article details including title, authors, publication info, and links.
 
-### `get_paper_abstract(url: str, publisher: str)`
 
-Extracts the abstract from a research paper's URL.
+### Easy install in VSCode
 
-**Parameters:**
-- `url`: URL of the research paper
-- `publisher`: Publisher platform ('acm', 'ieee', or 'researchgate')
+[vscode:mcp link](vscode:mcp/install?%7B%22name%22%3A%22scholar_search%22%2C%22command%22%3A%22uv%22%2C%22args%22%3A%5B%22--directory%22%2C%22%2Fopt%2Fscholar-agent%22%2C%22run%22%2C%22scholar_search.py%22%5D%7D)
 
-**Returns:** The paper's abstract if found, or an error message.
+### Prompt suggestions
+
+- get 5 articles about AI Agents in Software Engineering
+- for each article, use playwright tools to extract its abstract and write them in abstracts.md
+- generate a .bib file using the references that we have obtained
+- generate an intro.tex about AI Agents in Software Engineering, referencing the 5 articles
