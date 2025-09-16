@@ -61,6 +61,8 @@ Searches Google Scholar for scholarly articles matching the query.
 
 ### Easy install in VSCode
 
+(assuming that you have cloned the repo in /opt/scholar-agent)
+
 [vscode:mcp link](vscode:mcp/install?%7B%22name%22%3A%22scholar_search%22%2C%22command%22%3A%22uv%22%2C%22args%22%3A%5B%22--directory%22%2C%22%2Fopt%2Fscholar-agent%22%2C%22run%22%2C%22scholar_search.py%22%5D%7D)
 
 ### Prompt suggestions
